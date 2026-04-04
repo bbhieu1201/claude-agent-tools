@@ -14,6 +14,7 @@
 ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
 ![Go](https://img.shields.io/badge/-Go-00ADD8?logo=go&logoColor=white)
 ![Java](https://img.shields.io/badge/-Java-ED8B00?logo=openjdk&logoColor=white)
+![C#](https://img.shields.io/badge/-C%23-239120?logo=dotnet&logoColor=white)
 ![Perl](https://img.shields.io/badge/-Perl-39457E?logo=perl&logoColor=white)
 ![Markdown](https://img.shields.io/badge/-Markdown-000000?logo=markdown&logoColor=white)
 
@@ -327,6 +328,8 @@ everything-claude-code/
 |   |-- kotlin-build-resolver.md # Kotlin/Gradle build errors
 |   |-- rust-reviewer.md     # Rust code review
 |   |-- rust-build-resolver.md # Rust build error resolution
+|   |-- csharp-reviewer.md   # C#/.NET code review (NEW)
+|   |-- csharp-build-resolver.md # C#/.NET build error resolution (NEW)
 |   |-- pytorch-build-resolver.md # PyTorch/CUDA training errors
 |
 |-- skills/           # Workflow definitions and domain knowledge
@@ -394,6 +397,13 @@ everything-claude-code/
 |   |-- perl-testing/              # Perl TDD with Test2::V0, prove, Devel::Cover (NEW)
 |   |-- autonomous-loops/           # Autonomous loop patterns: sequential pipelines, PR loops, DAG orchestration (NEW)
 |   |-- plankton-code-quality/      # Write-time code quality enforcement with Plankton hooks (NEW)
+|   |-- dotnet-patterns/            # .NET architecture, async, DI, middleware patterns (NEW)
+|   |-- dotnet-security/            # ASP.NET Core security: JWT, CORS, rate limiting (NEW)
+|   |-- dotnet-tdd/                 # .NET TDD with xUnit, FluentAssertions, Coverlet (NEW)
+|   |-- dotnet-verification/        # .NET verification loop: build, test, scan (NEW)
+|   |-- csharp-coding-standards/    # C# coding standards: naming, async, records (NEW)
+|   |-- csharp-testing/             # C# testing patterns with xUnit, NSubstitute (NEW)
+|   |-- efcore-patterns/            # EF Core entities, N+1 prevention, migrations (NEW)
 |
 |-- commands/         # Legacy slash-entry shims; prefer skills/
 |   |-- tdd.md              # /tdd - Test-driven development
@@ -429,6 +439,9 @@ everything-claude-code/
 |   |-- update-docs.md      # /update-docs - Update documentation
 |   |-- update-codemaps.md  # /update-codemaps - Update codemaps
 |   |-- python-review.md    # /python-review - Python code review (NEW)
+|   |-- dotnet-review.md    # /dotnet-review - C#/.NET code review (NEW)
+|   |-- dotnet-build.md     # /dotnet-build - Fix .NET build errors (NEW)
+|   |-- dotnet-test.md      # /dotnet-test - .NET TDD workflow (NEW)
 |
 |-- rules/            # Always-follow guidelines (copy to ~/.claude/rules/)
 |   |-- README.md            # Structure overview and installation guide
@@ -446,6 +459,7 @@ everything-claude-code/
 |   |-- golang/              # Go specific
 |   |-- swift/               # Swift specific
 |   |-- php/                 # PHP specific (NEW)
+|   |-- csharp/              # C#/.NET specific (NEW)
 |
 |-- hooks/            # Trigger-based automations
 |   |-- README.md                 # Hook documentation, recipes, and customization guide
@@ -483,6 +497,7 @@ everything-claude-code/
 |   |-- django-api-CLAUDE.md      # Real-world Django REST API (DRF + Celery)
 |   |-- laravel-api-CLAUDE.md     # Real-world Laravel API (PostgreSQL + Redis) (NEW)
 |   |-- rust-api-CLAUDE.md        # Real-world Rust API (Axum + SQLx + PostgreSQL) (NEW)
+|   |-- dotnet-api-CLAUDE.md      # Real-world .NET API (ASP.NET Core + EF Core + PostgreSQL) (NEW)
 |
 |-- mcp-configs/      # MCP server configurations
 |   |-- mcp-servers.json    # GitHub, Supabase, Vercel, Railway, etc.
@@ -781,6 +796,9 @@ Not sure where to start? Use this quick reference. Skills are the canonical work
 | Update documentation | `/update-docs` | doc-updater |
 | Review Go code | `/go-review` | go-reviewer |
 | Review Python code | `/python-review` | python-reviewer |
+| Review C#/.NET code | `/dotnet-review` | csharp-reviewer |
+| Fix .NET build errors | `/dotnet-build` | csharp-build-resolver |
+| Write .NET tests (TDD) | `/dotnet-test` | tdd-guide |
 | Review TypeScript/JavaScript code | *(invoke `typescript-reviewer` directly)* | typescript-reviewer |
 | Audit database queries | *(auto-delegated)* | database-reviewer |
 
