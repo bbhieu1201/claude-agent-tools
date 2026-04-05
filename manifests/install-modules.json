@@ -124,7 +124,10 @@
         "skills/django-patterns",
         "skills/django-tdd",
         "skills/django-verification",
+        "skills/csharp-coding-standards",
         "skills/dotnet-patterns",
+        "skills/dotnet-tdd",
+        "skills/dotnet-verification",
         "skills/frontend-patterns",
         "skills/frontend-slides",
         "skills/golang-patterns",
@@ -176,6 +179,7 @@
       "paths": [
         "skills/clickhouse-io",
         "skills/database-migrations",
+        "skills/efcore-patterns",
         "skills/jpa-patterns",
         "skills/postgres-patterns"
       ],
@@ -234,6 +238,7 @@
       "description": "Security review and security-focused framework guidance.",
       "paths": [
         "skills/django-security",
+        "skills/dotnet-security",
         "skills/laravel-security",
         "skills/perl-security",
         "skills/security-review",

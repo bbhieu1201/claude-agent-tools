@@ -39,6 +39,7 @@ const LEGACY_COMPAT_BASE_MODULE_IDS_BY_TARGET = Object.freeze({
 const LEGACY_LANGUAGE_ALIAS_TO_CANONICAL = Object.freeze({
   cpp: 'cpp',
   csharp: 'csharp',
+  dotnet: 'csharp',
   go: 'go',
   golang: 'go',
   java: 'java',
@@ -53,7 +54,7 @@ const LEGACY_LANGUAGE_ALIAS_TO_CANONICAL = Object.freeze({
 });
 const LEGACY_LANGUAGE_EXTRA_MODULE_IDS = Object.freeze({
   cpp: ['framework-language'],
-  csharp: ['framework-language'],
+  csharp: ['framework-language', 'security', 'database'],
   go: ['framework-language'],
   java: ['framework-language'],
   perl: [],

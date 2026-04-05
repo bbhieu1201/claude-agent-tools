@@ -52,7 +52,7 @@ const LANGUAGE_RULES = [
   },
   {
     type: 'csharp',
-    markers: [],
+    markers: ['Directory.Build.props', 'global.json'],
     extensions: ['.cs', '.csproj', '.sln']
   },
   {

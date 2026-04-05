@@ -221,9 +221,21 @@
     {
       "id": "lang:csharp",
       "family": "language",
-      "description": "C# coding standards and patterns guidance. Currently resolves through the shared framework-language module.",
+      "description": "C# coding standards, .NET patterns, EF Core, security, TDD, and verification guidance. Resolves through framework-language, security, and database modules.",
       "modules": [
-        "framework-language"
+        "framework-language",
+        "security",
+        "database"
+      ]
+    },
+    {
+      "id": "framework:aspnetcore",
+      "family": "framework",
+      "description": "ASP.NET Core patterns, EF Core, security, TDD, and verification guidance. Resolves through framework-language, security, and database modules.",
+      "modules": [
+        "framework-language",
+        "security",
+        "database"
       ]
     },
     {
